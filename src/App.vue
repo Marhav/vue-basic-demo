@@ -1,16 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <h2 class="mb-4"><span class="text-vue-green">Vue</span> Basics Demo</h2>
+  <h4>Todo List</h4>
+  <TodoList />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import TodoList from "./Views/TodoList.vue";
 
 export default defineComponent({
   name: "App",
   components: {
-    HelloWorld,
+    TodoList,
   },
 });
 </script>
@@ -23,5 +24,8 @@ export default defineComponent({
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.text-vue-green {
+  color: #42b883;
 }
 </style>
